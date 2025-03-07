@@ -1,7 +1,7 @@
 import Hero from '../assets/hero.jpg'
 import HeroFood from '../assets/pizza-burgers.png'
 import { FaArrowRight } from 'react-icons/fa'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-scroll'
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
 
           {/* Button */}
           <div className='flex justify-center md:justify-start'>
-          <Link to="/">
+          <Link  to='reserve' smooth={true} duration={500}>
           <button className='flex items-center py-3 px-6 bg-yellow-400 text-xl md:text-2xl text-white font-semibold rounded-full hover:bg-yellow-600 mt-5'>Reserve <FaArrowRight className='w-6 h-6 ml-2' /></button>
           </Link>
           </div>

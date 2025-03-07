@@ -1,6 +1,6 @@
 const Reserve = () => {
   return (
-    <section className='reserve container mx-auto py-20 px-4'>
+    <section id="reserve-section" className='reserve container mx-auto py-20 px-4'>
       {/* Title */}
       <div className="flex justify-center items-center mb-12">
         <h2 className='font-bold text-4xl md:text-5xl text-gray-800 uppercase'>Reservation</h2>
@@ -10,15 +10,16 @@ const Reserve = () => {
       <div className='flex flex-col items-center md:flex-row justify-center gap-6'>
         <div className='flex flex-col items-center md:items-center w-full md:w-1/2'>
           <h3 className='font-bold text-2xl text-gray-800'>Book a Table</h3>
-          <form action="" className='mt-4 w-full max-w-md'>
+          <form  action="https://api.web3forms.com/submit" method="POST" className='mt-4 w-full max-w-md'>
+          <input type="hidden" name="access_key" value="a9ea7879-c34d-42ee-8699-3dd0216bbf46" />
             <div className='grid grid-cols-1 gap-4'>
-              <input type="text" placeholder='Name' className='py-2 px-3 bg-gray-100 rounded-md w-full' />
-              <input type="email" placeholder='Email' className='py-2 px-3 bg-gray-100 rounded-md w-full' />
-              <input type="text" placeholder='Phone' className='py-2 px-3 bg-gray-100 rounded-md w-full' />
-              <input type="date" placeholder='Date' className='py-2 px-3 bg-gray-100 rounded-md w-full' />
-              <input type="time" placeholder='Time' className='py-2 px-3 bg-gray-100 rounded-md w-full' />
-              <textarea name="" id="" cols="30" rows="4" placeholder='Message' className='py-2 px-3 bg-gray-100 rounded-md w-full'></textarea>
-              <button className='py-2 px-3 bg-yellow-400 text-white font-semibold rounded-md hover:bg-yellow-600'>Book Now</button>
+              <input type="text" name='name' placeholder='Name' className='py-2 px-3 bg-gray-100 rounded-md w-full' required />
+              <input type="email" name='email' placeholder='Email' className='py-2 px-3 bg-gray-100 rounded-md w-full' required />
+              <input type="text" name='phone' placeholder='Phone' className='py-2 px-3 bg-gray-100 rounded-md w-full' required />
+              <input type="date" name='date' placeholder='Date' className='py-2 px-3 bg-gray-100 rounded-md w-full' required />
+              <input type="time" name='time' placeholder='Time' className='py-2 px-3 bg-gray-100 rounded-md w-full' required />
+              <textarea name="message" id="" cols="30" rows="4" placeholder='Message' className='py-2 px-3 bg-gray-100 rounded-md w-full'  required></textarea>
+              <button className='py-2 px-3 bg-yellow-400 text-white font-semibold rounded-md hover:bg-yellow-600' type='submit'>Book Now</button>
             </div>
           </form>
         </div>
