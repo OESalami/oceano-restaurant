@@ -10,7 +10,7 @@ const Home = () => {
         {/* Hero text */}
         <div className='pl-3 justify-center items-center  text-center md:text-left'>
           <h1 className='shiny-text text-4xl md:text-6xl font-bold text-white uppercase mb-6'>Welcome to Oceano Restaurant</h1>
-          <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 font-semibold mb-5'>At Food Garage, enjoy the ultimate drive-in dining experience! <br /> Savor delicious, freshly made meals from the comfort of your car—quick, <br /> convenient, and packed with flavor.</p>
+          <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 font-semibold mb-5'>At Oceano, enjoy the ultimate drive-in dining experience! <br /> Savor delicious, freshly made meals from the comfort of your car—quick, <br /> convenient, and packed with flavor.</p>
 
           {/* Button */}
           <div className='flex justify-center md:justify-start'>
